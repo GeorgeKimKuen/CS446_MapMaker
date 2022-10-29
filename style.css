@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #5480D3;
+}
+
+#content{
+    background-image: linear-gradient(to right, darkgrey 1px, transparent 1px), linear-gradient(to bottom, darkgrey 1px, transparent 1px);
+    height: 100%;
+    background-size: 75px 75px;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin-top: 45%;
+  margin-left: 5%;
+}

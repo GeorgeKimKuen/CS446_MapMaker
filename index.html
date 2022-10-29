@@ -1,0 +1,57 @@
+<!--
+      File template from: https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html
+
+      Note: this React slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Production-ready setup with JSX: https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+      Larger project, integrated toolchain: https://reactjs.org/docs/create-a-new-react-app.html
+
+      You can also use React without JSX or Babel: https://reactjs.org/docs/react-without-jsx.html
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>role446</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="content" class="solid">
+      <div id="btns">
+      <button type="btn1" class="button" onclick="alert('Hello world!')">Button 1</button>
+      <button type="btn2" class="button" onclick="alert('Hello world!')">Button 2</button>
+      <button type="btn3" class="button" onclick="alert('Hello world!')">Button 3</button>
+      <button type="btn4" class="button" onclick="alert('Hello world!')">Button 4</button>
+      </div>
+    </div>
+
+
+    <script type="text/babel">
+
+      function MyApp() {
+
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        var width = 50;
+
+
+
+        return;
+      }
+
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+
+    </script>
+  </body>
+</html>
+
