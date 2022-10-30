@@ -43,4 +43,7 @@ h1 {
   background-color: #a3a3a32d;
   margin: auto;
   margin-top: 10px;
+  position: absolute;
+  left: 35%;
+  bottom: 2%;
 }
