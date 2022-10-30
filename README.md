@@ -2,11 +2,11 @@
 
 # resources
 
--https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html
--https://reactjs.org/docs/getting-started.html
--https://css-tricks.com/dont-overthink-flexbox-grids/
--https://stackoverflow.com/questions/3540194/how-to-make-a-grid-like-graph-paper-grid-with-just-css
--https://www.geeksforgeeks.org/how-to-create-a-paint-app-in-reactjs/
+-https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html  
+-https://reactjs.org/docs/getting-started.html  
+-https://css-tricks.com/dont-overthink-flexbox-grids/  
+-https://stackoverflow.com/questions/3540194/how-to-make-a-grid-like-graph-paper-grid-with-just-css  
+-https://www.geeksforgeeks.org/how-to-create-a-paint-app-in-reactjs/  
 
 # Getting Started with Create React App
 

@@ -10,49 +10,6 @@ $font-color: #fff;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #5480D3;
-}
-
-button {
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 0;
-  width: 200px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  background: $primary-color;
-  color: $font-color;
-  border: 2px solid transparent;
-  font-weight: 600;
-  margin: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 1em;
-}
-button:hover {
-  position: relative;
-  background: $font-color;
-  color: $primary-color;
-  border: 2px solid $primary-color;
-}
-.btn__text {
-  padding: 6px 8px;
-}
-.btn__icon {
-  background: $secondary-color;
-  color: $font-color;
-  height: 25px;
-  align-items: center;
-  display: flex;
-  padding: 6px 12px;
-  transition: 0.3s ease;
-}
-button:hover .btn__icon {
-  background: #f9f9f9;
-  color: $primary-color;
 }
 
 #content{

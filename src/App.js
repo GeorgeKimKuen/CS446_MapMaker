@@ -57,6 +57,7 @@ return (
 
         <div className="draw-area">
         <h1>Map Maker</h1>
+
           <Menu
             setLineColor={setLineColor}
             setLineWidth={setLineWidth}
@@ -67,17 +68,9 @@ return (
             onMouseUp={endDrawing}
             onMouseMove={draw}
             ref={canvasRef}
-            width={`1280px`}
-            height={`720px`}
+            width={`1920px`}
+            height={`800px`}
           />
-          <div class="multi-button">
-          <button>
-            <span class="btn__text">Cut</span>
-            <span class="btn__icon"><i class="fas fa-cut"></i></span>
-          </button>
-          <button><span class="btn__text">Copy</span> <span class="btn__icon"><i class="fas fa-copy"></i></span></button>
-          <button><span class="btn__text">Paste</span> <span class="btn__icon"><i class="fas fa-paste"></i></span></button>
-        </div>
         </div>
       </div>
     </div>
