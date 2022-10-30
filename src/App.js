@@ -69,7 +69,7 @@ return (
             onMouseMove={draw}
             ref={canvasRef}
             width={`1920px`}
-            height={`800px`}
+            height={`930px`}
           />
         </div>
       </div>

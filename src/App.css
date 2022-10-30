@@ -24,6 +24,7 @@ h1 {
   color: #4644f0;
   float: left;
   margin-left: 0.5em;
+  position: absolute;
 }
 
 .draw-area {
