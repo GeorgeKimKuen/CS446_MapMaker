@@ -12,16 +12,16 @@ $font-color: #fff;
 #content{
     background-image: linear-gradient(to right, #E4DFDA 1px, transparent 1px), linear-gradient(to bottom, #E4DFDA 1px, transparent 1px);
     height: 100%;
-    background-size: 75px 75px;
+    background-size: 40px 40px;
 }
 
 h1 {
     font-family: 'Luminari', cursive;
-    font-size: 96px;
+    font-size: 76px;
     color: #4281A4;
     float: left;
-    margin-left: 0.1em;
-    margin-top: 0.1em;
+    margin-left: 2px;
+    margin-top: 2px;
     position: absolute;
 }
 
@@ -33,7 +33,7 @@ h1 {
 }
 
 .Menu {
-    width: 650px;
+    width: 700px;
     height: 50px;
     display: flex;
     padding-left: 12px;
@@ -45,13 +45,13 @@ h1 {
     margin: auto;
     margin-top: 10px;
     position: absolute;
-    left: 35%;
-    bottom: 2%;
+    left: 650px;
+    bottom: 0px;
 }
 
 label {
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 input {

@@ -4,7 +4,7 @@ import "../App.css";
 const Menu = ({ setLineColor, setLineWidth, setLineOpacity }) => {
 	return (
 		<div className="Menu">
-		<label>Brush Color </label>
+		<label>Color </label>
 		<input
 			type="color"
 			onChange={(e) => {
@@ -29,8 +29,16 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity }) => {
 			setLineOpacity(e.target.value / 100);
 			}}
 		/>
+		<label>Spawn Token </label>
+		<input
+			type="button"
+			value="New Token"
+			onChange={(e) => {
+			setLineWidth(e.target.value);
+			}}
+		/>
 		</div>
-	);
+		);
 };
 
 export default Menu;
