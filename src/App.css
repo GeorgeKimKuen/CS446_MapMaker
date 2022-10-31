@@ -3,10 +3,10 @@ $secondary-color: rgba(120, 113, 130, 1);;
 $font-color: #fff;
 
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #content{
@@ -16,44 +16,44 @@ $font-color: #fff;
 }
 
 h1 {
-  font-family: 'Luminari', cursive;
-  font-size: 96px;
-  color: #4281A4;
-  float: left;
-  margin-left: 0.1em;
-  margin-top: 0.1em;
-  position: absolute;
+    font-family: 'Luminari', cursive;
+    font-size: 96px;
+    color: #4281A4;
+    float: left;
+    margin-left: 0.1em;
+    margin-top: 0.1em;
+    position: absolute;
 }
 
 .draw-area {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
 }
 
 .Menu {
-  width: 650px;
-  height: 50px;
-  display: flex;
-  padding-left: 12px;
-  padding-right: 12px;
-  justify-content: space-evenly;
-  border-radius: 5px;
-  align-items: center;
-  background-color: #D4B483;
-  margin: auto;
-  margin-top: 10px;
-  position: absolute;
-  left: 35%;
-  bottom: 2%;
+    width: 650px;
+    height: 50px;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #D4B483;
+    margin: auto;
+    margin-top: 10px;
+    position: absolute;
+    left: 35%;
+    bottom: 2%;
 }
 
 label {
-  padding-left: 12px;
-  padding-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 input {
-  accent-color: #48A9A6;
+    accent-color: #48A9A6;
 }
