@@ -1,6 +1,3 @@
-@import url(
-'https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 $primary-color: rgba(120, 113, 130, 0.9);
 $secondary-color: rgba(120, 113, 130, 1);;
 $font-color: #fff;
@@ -13,17 +10,18 @@ $font-color: #fff;
 }
 
 #content{
-    background-image: linear-gradient(to right, darkgrey 1px, transparent 1px), linear-gradient(to bottom, darkgrey 1px, transparent 1px);
+    background-image: linear-gradient(to right, #E4DFDA 1px, transparent 1px), linear-gradient(to bottom, #E4DFDA 1px, transparent 1px);
     height: 100%;
     background-size: 75px 75px;
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 50px;
-  color: #4644f0;
+  font-family: 'Luminari', cursive;
+  font-size: 96px;
+  color: #4281A4;
   float: left;
-  margin-left: 0.5em;
+  margin-left: 0.1em;
+  margin-top: 0.1em;
   position: absolute;
 }
 
@@ -38,13 +36,24 @@ h1 {
   width: 650px;
   height: 50px;
   display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
   justify-content: space-evenly;
   border-radius: 5px;
   align-items: center;
-  background-color: #a3a3a32d;
+  background-color: #D4B483;
   margin: auto;
   margin-top: 10px;
   position: absolute;
   left: 35%;
   bottom: 2%;
+}
+
+label {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+input {
+  accent-color: #48A9A6;
 }
