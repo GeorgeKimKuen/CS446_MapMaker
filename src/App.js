@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Menu from "./components/Menu";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 import "./App.css";
 
 function App() {
@@ -54,10 +56,12 @@ function App() {
     return (
         <div className="App">
           <div id="content" class="solid">
-
             <div className="draw-area">
-            <h1>Map Maker</h1>
 
+            <h1>Map Maker</h1>
+              <Popup trigger={<button>About Application</button>} position="right center">
+                <div>Map Maker is a prototype application to help play tabletop rpg games online with friends.</div>
+              </Popup>
               <Menu
                 setLineColor={setLineColor}
                 setLineWidth={setLineWidth}

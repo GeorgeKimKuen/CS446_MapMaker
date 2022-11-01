@@ -29,12 +29,20 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity }) => {
 			setLineOpacity(e.target.value / 100);
 			}}
 		/>
-		<label>Spawn Token </label>
+		<label> </label>
 		<input
 			type="button"
-			value="New Token"
+			value="Create Token"
 			onChange={(e) => {
-			setLineWidth(e.target.value);
+
+			}}
+		/>
+		<label></label>
+		<input
+			type="button"
+			value="Toggle Eraser"
+			onChange={(e) => {
+
 			}}
 		/>
 		</div>
