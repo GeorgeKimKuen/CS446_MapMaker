@@ -1,16 +1,13 @@
 import React from "react";
 import "../App.css";
 
-const Menu = ({ setLineColor, setLineWidth, setLineOpacity, eraseDrawing }) => {
+const Menu = ({ setLineColor, setLineWidth, setLineOpacity, eraseDrawing, placePiece }) => {
 	return (
 		<div className="Menu">
 		<label></label>
 		<input
 			type="button"
-			value="△ Hide"
-			onChange={(e) => {
-
-			}}
+			value="△"
 		/>
 
 		<label>Color </label>
@@ -41,9 +38,9 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, eraseDrawing }) => {
 		<label> </label>
 		<input
 			type="button"
-			value="Create Token"
+			value="Place a piece"
 			onClick={(e) => {
-
+				placePiece();
 			}}
 		/>
 		<label></label>
@@ -55,7 +52,7 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity, eraseDrawing }) => {
 			}}
 		/>
 		</div>
-		);
+	);
 };
 
 export default Menu;

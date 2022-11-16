@@ -1,12 +1,16 @@
 import { useEffect, useRef, useState } from "react";
+import Draggable from "react-draggable";
 import Menu from "./components/Menu";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import "./App.css";
+import * as ReactDOM from 'react-dom/client';
 
 function App() {
     const canvasRef = useRef(null);
     const ctxRef = useRef(null);
+    const rootRef = useRef(null);
+    const reactDOM = require('react-dom/client');
     const [isDrawing, setIsDrawing] = useState(false);
     const [lineWidth, setLineWidth] = useState(5);
     const [lineColor, setLineColor] = useState("black");
@@ -17,12 +21,16 @@ function App() {
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
+        const root = reactDOM.createRoot(
+          document.getElementById('root')
+        );
         ctx.lineCap = "round";
         ctx.lineJoin = "round";
         ctx.globalAlpha = lineOpacity;
         ctx.strokeStyle = lineColor;
         ctx.lineWidth = lineWidth;
         ctxRef.current = ctx;
+        rootRef.current = root;
     }, [lineColor, lineOpacity, lineWidth]);
 
     // Function for starting the drawing
@@ -43,6 +51,12 @@ function App() {
 
     const eraseDrawing = () => {
       ctxRef.current.clearRect(0, 0, 1920, 1080);
+    };
+
+    const placePiece = () => {
+
+      const element = <Draggable><div className="piece"></div></Draggable>;
+      rootRef.current.render(element);
     };
 
     const draw = (e) => {
@@ -66,11 +80,13 @@ function App() {
               <Popup trigger={<button>About Application</button>} position="right center">
                 <div>Map Maker is a prototype application to help play games online with friends.</div>
               </Popup>
+
               <Menu
                 setLineColor={setLineColor}
                 setLineWidth={setLineWidth}
                 setLineOpacity={setLineOpacity}
                 eraseDrawing={eraseDrawing}
+                placePiece={placePiece}
               />
               <canvas
                 onMouseDown={startDrawing}

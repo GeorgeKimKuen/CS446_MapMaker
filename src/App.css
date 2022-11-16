@@ -47,9 +47,19 @@ h1 {
     margin-bottom: 8px;
     margin-top: 10px;
     position: absolute;
-    left: 15%;
+    left: 1%;
     bottom: 0px;
     border: 2px solid black;
+}
+
+.piece {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow:
+    0 0 20px 10px #fff;
 }
 
 .popup-content {
