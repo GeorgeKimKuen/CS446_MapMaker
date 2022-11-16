@@ -49,7 +49,7 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity }) => {
 		<label></label>
 		<input
 			type="button"
-			value="Toggle Eraser"
+			value="Eraser"
 			onChange={(e) => {
 				console.log(e)
 			}}
