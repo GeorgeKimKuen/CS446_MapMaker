@@ -35,7 +35,7 @@ h1 {
 }
 
 .Menu {
-    width: 800px;
+    width: 850px;
     height: 45px;
     display: flex;
     padding-left: 12px;
@@ -47,7 +47,7 @@ h1 {
     margin-bottom: 8px;
     margin-top: 10px;
     position: absolute;
-    left: 522px;
+    left: 15%;
     bottom: 0px;
     border: 2px solid black;
 }

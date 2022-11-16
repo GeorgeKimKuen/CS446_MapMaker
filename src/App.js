@@ -28,10 +28,7 @@ function App() {
     // Function for starting the drawing
     const startDrawing = (e) => {
         ctxRef.current.beginPath();
-        ctxRef.current.moveTo(
-        e.nativeEvent.offsetX,
-        e.nativeEvent.offsetY
-        );
+        ctxRef.current.moveTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
         setIsDrawing(true);
     };
 
@@ -72,8 +69,8 @@ function App() {
                 onMouseUp={endDrawing}
                 onMouseMove={draw}
                 ref={canvasRef}
-                width={`1920px`}
-                height={`930px`}
+                width={`100%`}
+                height={`100%`}
               />
             </div>
           </div>
