@@ -28,7 +28,10 @@ function App() {
     // Function for starting the drawing
     const startDrawing = (e) => {
         ctxRef.current.beginPath();
-        ctxRef.current.moveTo(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
+        ctxRef.current.moveTo(
+          e.nativeEvent.offsetX,
+          e.nativeEvent.offsetY
+        );
         setIsDrawing(true);
     };
 
