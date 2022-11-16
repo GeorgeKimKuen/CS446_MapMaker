@@ -4,7 +4,13 @@ import Menu from "./components/Menu";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import "./App.css";
+
+import Lobby from './components/Lobby';
+import ClipLoader from "react-spinners/ClipLoader";
+
+
 import * as ReactDOM from 'react-dom/client';
+
 
 function App() {
     const canvasRef = useRef(null);
@@ -71,6 +77,16 @@ function App() {
       ctxRef.current.stroke();
     };
 
+    const [lobby, setlobby] = useState(false)
+    const [loading, setloading] = useState(false)
+
+    useEffect(()=>{
+      setTimeout(()=> {
+        setlobby(true);
+  
+      }, 0);  
+    },[]);
+
     return (
         <div className="App">
           <div id="content" class="solid">
@@ -81,6 +97,8 @@ function App() {
                 <div>Map Maker is a prototype application to help play games online with friends.</div>
               </Popup>
 
+              <Lobby trigger={lobby} setTrigger ={setlobby}>
+              </Lobby>
               <Menu
                 setLineColor={setLineColor}
                 setLineWidth={setLineWidth}
