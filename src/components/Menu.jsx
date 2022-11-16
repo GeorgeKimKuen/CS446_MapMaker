@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-const Menu = ({ setLineColor, setLineWidth, setLineOpacity }) => {
+const Menu = ({ setLineColor, setLineWidth, setLineOpacity, eraseDrawing }) => {
 	return (
 		<div className="Menu">
 		<label></label>
@@ -42,16 +42,16 @@ const Menu = ({ setLineColor, setLineWidth, setLineOpacity }) => {
 		<input
 			type="button"
 			value="Create Token"
-			onChange={(e) => {
+			onClick={(e) => {
 
 			}}
 		/>
 		<label></label>
 		<input
 			type="button"
-			value="Eraser"
-			onChange={(e) => {
-				console.log(e)
+			value="Erase Board"
+			onClick={(e) => {
+				eraseDrawing();
 			}}
 		/>
 		</div>

@@ -41,6 +41,10 @@ function App() {
         setIsDrawing(false);
     };
 
+    const eraseDrawing = () => {
+      ctxRef.current.clearRect(0, 0, 1920, 1080);
+    };
+
     const draw = (e) => {
       if (!isDrawing) {
         return;
@@ -60,12 +64,13 @@ function App() {
 
             <h1>Map Maker</h1>
               <Popup trigger={<button>About Application</button>} position="right center">
-                <div>Map Maker is a prototype application to help play tabletop rpg games online with friends.</div>
+                <div>Map Maker is a prototype application to help play games online with friends.</div>
               </Popup>
               <Menu
                 setLineColor={setLineColor}
                 setLineWidth={setLineWidth}
                 setLineOpacity={setLineOpacity}
+                eraseDrawing={eraseDrawing}
               />
               <canvas
                 onMouseDown={startDrawing}
