@@ -7,6 +7,8 @@ import "./App.css";
 import * as ReactDOM from 'react-dom/client';
 import Lobby from './components/Lobby';
 
+import React from 'react';
+
 function App() {
     const canvasRef = useRef(null);
     const ctxRef = useRef(null);
@@ -55,9 +57,40 @@ function App() {
     };
 
     const placePiece = () => {
+      
+      rootRef.current.render(
+     
+      
+        <div className="App">
+          <div id="content" class="solid">
+            <div className="draw-area">
 
-      const element = <Draggable><div className="piece"></div></Draggable>;
-      rootRef.current.render(element);
+            <h1>Map Maker</h1>
+              <Popup trigger={<button>About Application</button>} position="right center">
+                <div>Map Maker is a prototype application to help play games online with friends.</div>
+              </Popup>
+              <Draggable><div className="piece"></div></Draggable>
+             
+              <Menu
+                setLineColor={setLineColor}
+                setLineWidth={setLineWidth}
+                setLineOpacity={setLineOpacity}
+                eraseDrawing={eraseDrawing}
+                placePiece={placePiece}
+              />
+              <canvas
+                onMouseDown={startDrawing}
+                onMouseUp={endDrawing}
+                onMouseMove={draw}
+                ref={canvasRef}
+                width={`1920px`}
+                height={`930px`}
+              />
+            </div>
+          </div>
+        </div>
+      );
+      
     };
 
     const draw = (e) => {
@@ -74,6 +107,7 @@ function App() {
 
     const [lobby, setlobby] = useState(false)
     const [loading, setloading] = useState(false)
+    
 
     useEffect(()=>{
       setTimeout(()=> {
@@ -82,7 +116,7 @@ function App() {
       }, 0);
     },[]);
 
-    return (
+    return (    
         <div className="App">
           <div id="content" class="solid">
             <div className="draw-area">
