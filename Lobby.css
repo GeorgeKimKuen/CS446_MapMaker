@@ -117,29 +117,29 @@
   .host-button:focus {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   }
-  
 
 
-  
-  .lobby-inner .join-text {
+
+
+.lobby-inner .join-text {
     align-self: center;
     font-family: Neucha, sans-serif;
     color: #333;
     font-size: 1.2rem;
-      margin: 0 auto;
-    padding: 1.5rem 2rem;
+    margin: 0 auto;
+    padding: .75rem 2rem;
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
     border: none;
     display: block;
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
-
-
-    top: 80%;
-    left: 20%;
-    right: 20%
-  }
+    position: fixed;
+    
+    top: 63%;
+    left: 36%;
+    right: 36%
+}
   
   .lobby-inner .join-text:placeholder-shown + .form__label {
     opacity: 0;

@@ -4,10 +4,13 @@ import Menu from "./components/Menu";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import "./App.css";
-import * as ReactDOM from 'react-dom/client';
-import Lobby from './components/Lobby';
 
-import React from 'react';
+import Lobby from './components/Lobby';
+import ClipLoader from "react-spinners/ClipLoader";
+
+
+import * as ReactDOM from 'react-dom/client';
+
 
 function App() {
     const canvasRef = useRef(null);
@@ -57,40 +60,9 @@ function App() {
     };
 
     const placePiece = () => {
-      
-      rootRef.current.render(
-     
-      
-        <div className="App">
-          <div id="content" class="solid">
-            <div className="draw-area">
 
-            <h1>Map Maker</h1>
-              <Popup trigger={<button>About Application</button>} position="right center">
-                <div>Map Maker is a prototype application to help play games online with friends.</div>
-              </Popup>
-              <Draggable><div className="piece"></div></Draggable>
-             
-              <Menu
-                setLineColor={setLineColor}
-                setLineWidth={setLineWidth}
-                setLineOpacity={setLineOpacity}
-                eraseDrawing={eraseDrawing}
-                placePiece={placePiece}
-              />
-              <canvas
-                onMouseDown={startDrawing}
-                onMouseUp={endDrawing}
-                onMouseMove={draw}
-                ref={canvasRef}
-                width={`1920px`}
-                height={`930px`}
-              />
-            </div>
-          </div>
-        </div>
-      );
-      
+      const element = <Draggable><div className="piece"></div></Draggable>;
+      rootRef.current.render(element);
     };
 
     const draw = (e) => {
@@ -107,16 +79,15 @@ function App() {
 
     const [lobby, setlobby] = useState(false)
     const [loading, setloading] = useState(false)
-    
 
     useEffect(()=>{
       setTimeout(()=> {
         setlobby(true);
-
-      }, 0);
+  
+      }, 0);  
     },[]);
 
-    return (    
+    return (
         <div className="App">
           <div id="content" class="solid">
             <div className="draw-area">
@@ -126,8 +97,8 @@ function App() {
                 <div>Map Maker is a prototype application to help play games online with friends.</div>
               </Popup>
 
-              <Lobby trigger={lobby} setTrigger ={setlobby}></Lobby>
-
+              <Lobby trigger={lobby} setTrigger ={setlobby}>
+              </Lobby>
               <Menu
                 setLineColor={setLineColor}
                 setLineWidth={setLineWidth}
