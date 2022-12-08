@@ -74,6 +74,10 @@
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
+.host-button, .join-button {
+    margin-left: 10%;
+}
+
 .lobby-inner .host-button {
     align-self: center;
     background-color: #fff;
@@ -117,9 +121,11 @@
   .host-button:focus {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   }
-  
 
-
+    
+  .join-text {
+    text-align: center;
+    }
   
   .lobby-inner .join-text {
     align-self: center;
@@ -134,11 +140,10 @@
     display: block;
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
-
-
-    top: 80%;
-    left: 20%;
-    right: 20%
+    position: fixed;
+    top: 63%;
+    left: 36%;
+    right: 36%;
   }
   
   .lobby-inner .join-text:placeholder-shown + .form__label {
