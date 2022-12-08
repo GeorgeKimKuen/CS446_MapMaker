@@ -1,0 +1,99 @@
+$primary-color: rgba(120, 113, 130, 0.9);
+$secondary-color: rgba(120, 113, 130, 1);
+$font-color: #fff;
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#content{
+    background-image: linear-gradient(to right, darkgrey 1px, transparent 1px), linear-gradient(to bottom, darkgrey 1px, transparent 1px);
+    height: 100vh;
+    background-size: 40px 40px;
+    background-color: #E4DFDA;
+}
+
+h1 {
+    font-family: 'Luminari', cursive;
+    font-size: 82px;
+    color: #4281A4;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+    position: absolute;
+    text-shadow: 2px 2px black;
+}
+
+.draw-area {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+}
+
+.Menu {
+    width: 850px;
+    height: 45px;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #D4B483;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    position: absolute;
+    left: 1%;
+    bottom: 0px;
+    border: 2px solid black;
+}
+
+.piece {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow:
+    0 0 20px 10px #fff;
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+label {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+input {
+    accent-color: #48A9A6;
+}
+
+button {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
